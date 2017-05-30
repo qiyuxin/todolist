@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %} user todo list show {% endblock %}
+
+{% block page_content %}
+
+<table class="table">
+ <!--  <thead>
+    <tr>
+      <th>#</th>
+      <th>id</th>
+      <th>name</th>
+      <th>enable</th>
+    </tr>
+  </thead> --> 
+ <tbody>
+ {% for user in uusers %}
+    <tr>
+     <!--  <th scope="row"></th> -->
+      <td>{{ user }}</td>
+     
+    </tr>
+ {% endfor %}  
+  
+  </tbody>
+</table> 
+
+
+{{ wtf.quick_form(form) }}
+{% endblock %}
+
+
+
