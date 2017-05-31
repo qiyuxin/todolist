@@ -1,5 +1,5 @@
 # coding=utf-8
-from flask import render_template,request,session,g,redirect,url_for
+from flask import render_template,request,session,g,redirect,url_for,flash
 from . import main
 from .. import db
 from .. import loginmanager
@@ -7,7 +7,7 @@ from ..database import db_session,User,Task
 import time
 # from .forms import NameForm
 from flask_wtf import FlaskForm
-from flask.ext.login import login_user,login_required,current_user
+from flask_login import login_user,login_required,current_user
 #from flask.ctx import _request_ctx_stack
 #form = FlaskForm()
 # def data_in():
@@ -58,9 +58,12 @@ def users():
 		return render_template('user.html',users=uusers)
 	
 @main.route('/tasks',methods=["GET"])
+@login_required
 def tasks():
-	tasks=Task.query.all()
-	return render_template('task.html',task)
+    sv=db_session()
+    tasks=sv.query(Task.username,Task.title,Task.body,Task.state).all()
+    print "00000",tasks
+    return render_template('task.html',tasks=tasks)
 
 # @main.route('/login', methods=["GET"])
 # def login():
@@ -92,6 +95,12 @@ def login():
 # def check_user():
 	#TODO: verify username and pwd
 	#return redirect('/users', 302)
+
+
+
+
+
+
 
 
 @main.route('/users',methods=["POST"])

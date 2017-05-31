@@ -41,3 +41,8 @@
 * 查询某一个 task详情：get /tasks/:id
 * 更新某一个task：put  /tasks/:id
 * 删除一个或者多个任务：delete /tasks/:id|id1,id2,id3..
+
+
+#### 备注 
+* 查看git上的html样式文件方法：原地址https://github.com/JsonBeta/backendUI/blob/master/docs/examples/layout.html 
+* 查看方法：https://htmlpreview.github.io/?https://github.com/JsonBeta/backendUI/blob/master/docs/examples/layout.html

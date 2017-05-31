@@ -2,7 +2,7 @@ from sqlalchemy import create_engine,Column,String,Text,Integer,Time,Boolean
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import config
-from flask.ext.login import UserMixin
+from flask_login import UserMixin
 
 engine = create_engine(config.SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 db_session = scoped_session(sessionmaker(autocommit=False,
@@ -33,7 +33,7 @@ class User(Base, UserMixin):
 	def get_id(self):
 		return unicode(self.id)
 
-class Task(Base):
+class Task(Base,UserMixin):
 	__tablename__='tasks'
 	id=Column(Integer,primary_key=True)
 	username=Column(String(64),unique=True,index=True)
