@@ -35,7 +35,7 @@
                             <!-- the dropdown has a custom user-avatar class, this is the small avatar with the badge -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span>
-				                <img class="menu-avatar" src="../../img/avatar1.jpg" /> <span> {{ current_user.name }} <i class="icon-caret-down"></i></span>
+                                <img class="menu-avatar" src="../../img/avatar1.jpg" /> <span> {{ current_user.name }} <i class="icon-caret-down"></i></span>
                                 <span class="badge badge-dark-red">5</span>
                                 </span>
                             </a>
@@ -45,7 +45,7 @@
                                     <div class="avatar">
                                         <img src="../../img/avatar1.jpg" />
                                     </div>
-                                    <span>huahua</span>
+                                    <span>curr_user.id</span>
                                 </li>
                                 <li class="divider"></li>
                                 <li><a href="#"><i class="icon-user"></i> <span>个人资料</span></a></li>
@@ -117,2823 +117,450 @@
         </div>
         <!-- E 主要内容区域__表格tables -->
         <!-- S 主要内容区域__按钮buttons -->
-        <div class="container-fluid padded">
+        <div class="container-fluid hpadded">
             <ul class="action-nav-normal">
                 <li>
-                    <a href="#" class="tip" title="New Project">
+                    <a href="/adduser" class="tip" title="" data-original-title="add user">
                         <i class="icon-file-alt"></i>
-                        <span>新建项目</span>
+                        <span>add user</span>
                     </a>
-                    <span class="triangle-button red"><i class="icon-plus"></i></span>
+                    <span class="triangle-button red">
+          <i class="icon-plus"></i>
+        </span>
                 </li>
-                <li>
-                    <a href="#" class="tip" title="Messages">
-                        <i class="icon-comments-alt"></i>
-                        <span>新消息</span>
-                    </a>
-                    <span class="label label-black">14</span>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Files">
-                        <i class="icon-folder-open-alt"></i>
-                        <span>文件夹</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Users">
-                        <i class="icon-user"></i>
-                        <span>用户</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Friends">
-                        <i class="icon-facebook-sign"></i>
-                        <span>Friends</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Followers">
-                        <i class="icon-twitter"></i>
-                        <span>Followers</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="action-nav-normal rounded">
-                <li>
-                    <a href="#" class="tip" title="New Project">
-                        <i class="icon-file-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Messages">
-                        <i class="icon-comments-alt"></i>
-                    </a>
-                    <span class="label label-black">14</span>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Files">
-                        <i class="icon-folder-open-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Users">
-                        <i class="icon-user"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Friends">
-                        <i class="icon-facebook-sign"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="tip" title="Followers">
-                        <i class="icon-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="action-nav-normal">
-                <li class="blue">
-                    <a href="#" class="tip" title="New Project">
-                        <i class="icon-file-alt"></i>
-                        <span>新建项目</span>
-                    </a>
-                </li>
-                <li class="red">
-                    <a href="#" class="tip" title="Messages">
-                        <i class="icon-comments-alt"></i>
-                        <span>新消息</span>
-                    </a>
-                    <span class="label label-black">14</span>
-                </li>
-                <li class="green">
-                    <a href="#" class="tip" title="Files">
-                        <i class="icon-folder-open-alt"></i>
-                        <span>文件夹</span>
-                    </a>
-                </li>
-                <li class="sea">
-                    <a href="#" class="tip" title="Users">
-                        <i class="icon-user"></i>
-                        <span>用户</span>
-                    </a>
-                </li>
-                <li class="facebook">
-                    <a href="#" class="tip" title="Friends">
-                        <i class="icon-facebook-sign"></i>
-                        <span>Friends</span>
-                    </a>
-                </li>
-                <li class="twitter">
-                    <a href="#" class="tip" title="Followers">
-                        <i class="icon-twitter"></i>
-                        <span>Followers</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">基本按钮样式</span></div>
-                        <div class="box-content padded">
-                            <div class="page-header">
-                                <h4>正常按钮样式</h4>
-                            </div>
-                            <p>
-                                <button class="btn btn-default">button</button>
-                                <button class="btn btn-red">button</button>
-                                <button class="btn btn-blue">button</button>
-                                <button class="btn btn-green">button</button>
-                            </p>
-                            <p>
-                                <button class="btn btn-gray">button</button>
-                                <button class="btn btn-black">button</button>
-                                <button class="btn btn-lightblue">button</button>
-                                <button class="btn btn-gold">button</button>
-                            </p>
-                            <p>
-                                <button class="btn btn-sea">button</button>
-                                <button class="btn btn-brown">button</button>
-                            </p>
-                            <div class="page-header">
-                                <h4>大按钮样式</h4>
-                            </div>
-                            <button class="btn btn-large btn-default">button</button>
-                            <button class="btn btn-large btn-red">button</button>
-                            <button class="btn btn-large btn-blue">button</button>
-                            <button class="btn btn-large btn-green">button</button>
-                            <div class="page-header">
-                                <h4>小按钮样式</h4>
-                            </div>
-                            <button class="btn btn-small btn-default">button</button>
-                            <button class="btn btn-small btn-red">button</button>
-                            <button class="btn btn-small btn-blue">button</button>
-                            <button class="btn btn-small btn-green">button</button>
-                            <div class="page-header">
-                                <h4>mini小按钮样式</h4>
-                            </div>
-                            <button class="btn btn-mini btn-default">button</button>
-                            <button class="btn btn-mini btn-red">button</button>
-                            <button class="btn btn-mini btn-blue">button</button>
-                            <button class="btn btn-mini btn-green">button</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">下拉选择按钮</span></div>
-                        <div class="box-content padded">
-                            <div class="page-header">
-                                <h4>正常样式</h4>
-                            </div>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-default  dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-red  dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-blue  dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-green  dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <div class="page-header">
-                                <h4>大个样式</h4>
-                            </div>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-default btn-large dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-red btn-large dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-blue btn-large dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-green btn-large dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <div class="page-header">
-                                <h4>小个样式</h4>
-                            </div>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-red btn-small dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-blue btn-small dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-green btn-small dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <div class="page-header">
-                                <h4>Mini小个样式</h4>
-                            </div>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-red btn-mini dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <p>
-                                <div class="btn-group">
-                                    <button class="btn btn-blue btn-mini dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-green btn-mini dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">按钮下拉分离</span></div>
-                        <div class="box-content padded">
-                            <div class="btn-group">
-                                <button class="btn btn-default">Actions</button>
-                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-red">Actions</button>
-                                <button class="btn btn-red dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-blue">Actions</button>
-                                <button class="btn btn-blue dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-green">Actions</button>
-                                <button class="btn btn-green dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">工具条</span></div>
-                        <div class="box-content padded">
-                            <div class="btn-toolbar" style="margin: 0;">
-                                <div class="btn-group">
-                                    <button class="btn btn-default"><i class="icon-file"></i></button>
-                                    <button class="btn btn-default"><i class="icon-folder-open-alt"></i></button>
-                                    <button class="btn btn-default"><i class="icon-save"></i></button>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-default"><i class="icon-cut"></i></button>
-                                    <button class="btn btn-default"><i class="icon-copy"></i></button>
-                                    <button class="btn btn-default"><i class="icon-paste"></i></button>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-default"><i class="icon-download-alt"></i></button>
-                                    <button class="btn btn-default"><i class="icon-search"></i></button>
-                                    <button class="btn btn-default"><i class="icon-lock"></i></button>
-                                    <button class="btn btn-default"><i class="icon-comment-alt"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">小图标按钮</span></div>
-                        <div class="box-content padded">
-                            <button class="btn btn-blue"><i class="icon-home"></i> Home</button>
-                            <button class="btn btn-default"><i class="icon-cog"></i> Options</button>
-                            <button class="btn btn-default"><i class="icon-bar-chart"></i> Charts</button>
-                            <div class="btn-group">
-                                <button class="btn btn-default"><i class="icon-wrench"></i> Actions</button>
-                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil"></i> Edit <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="icon-cut"></i> Cut</a></li>
-                                    <li><a href="#"><i class="icon-copy"></i> Copy</a></li>
-                                    <li><a href="#"><i class="icon-paste"></i> Paste</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header relative">
-                            <span class="title">三角按钮</span>
-                            <span class="triangle-button blue"><i class="icon-question-sign"></i></span>
-                        </div>
-                        <div class="box-content padded relative">
-                            <p>你可以添加BOOTSTRAP支持的任何小图标 :)</p>
-                            <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="well relative">
-                                        <span class="triangle-button red"><i class="icon-plus"></i></span> some content
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="well relative">
-                                        <span class="triangle-button green"><i class="icon-bell"></i></span> some content
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="well relative">
-                                        <span class="triangle-button blue"><i class="icon-ok"></i></span> some content
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="well relative">
-                                        <span class="triangle-button orange"><i class="icon-pencil"></i></span> some content
-                                    </div>
-                                </div>
-                            </div>
-                            <p>你可以添加BOOTSTRAP支持的任何小图标 :)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- E 主要内容区域__按钮buttons -->
-        <!-- S 主要内容区域__小图标icons -->
-        <div class="container-fluid padded">
-            <div class="row-fluid ">
-                <div class="span3">
+                <!-- E 主要内容区域__按钮buttons -->
+                <!-- S 主要内容区域__小图标icons -->
+                <!-- E 主要内容区域__小图标icons -->
+                <!-- S 主要内容区域__布局grid -->
+                <!-- E 主要内容区域__布局grid -->
+                <!-- S 主要内容区域__通用元素general -->
+                <!-- E 主要内容区域__通用元素general -->
+                <!-- S 主要内容区域__TAB切换 -->
+                <div class="padded">
                     <div class="box">
                         <div class="box-header">
-                            <span class="title">大图标</span>
-                        </div>
-                        <div class="box-content">
-                            <div class="row-fluid icon-extend">
-                                <ul>
-                                    <li><i class="icon-star icon-large"></i> icon-large</li>
-                                    <li><i class="icon-star icon-2x"></i> icon-2x</li>
-                                    <li><i class="icon-star icon-3x"></i> icon-3x</li>
-                                    <li><i class="icon-star icon-4x"></i> icon-4x</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">动画图标</span>
-                        </div>
-                        <div class="box-content">
-                            <div class="row-fluid icon-extend">
-                                <ul>
-                                    <li><i class="icon-spinner  icon-2x icon-spin"></i> icon-spin</li>
-                                    <li><i class="icon-repeat icon-2x icon-spin"></i> icon-spin</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">暗色图标</span>
-                        </div>
-                        <div class="box-content">
-                            <div class="row-fluid icon-extend">
-                                <ul>
-                                    <li><i class="icon-star  icon-large icon-muted"></i> icon-muted</li>
-                                    <li><i class="icon-quote-left icon-large  icon-muted"></i> icon-muted</li>
-                                    <li><i class="icon-quote-right icon-large  icon-muted"></i> icon-muted</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span3">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">列表</span>
-                        </div>
-                        <div class="box-content">
-                            <div class="row-fluid">
-                                <ul class="icons">
-                                    <li><i class="icon-plus-sign-alt  "></i> ul add class "icons"</li>
-                                    <li><i class="icon-plus-sign-alt"></i> ul add class "icons"</li>
-                                    <li><i class="icon-plus-sign-alt"></i> ul add class "icons"</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">网络常用图标</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li> <i class="icon-adjust"></i> icon-adjust
+                            <ul class="nav nav-tabs nav-tabs-left nav-tabs-wms">
+                                <li class="active"><a href="#">发货单查询</a>
+                                    <button type="button" class="close">×</button>
                                 </li>
-                                <li>
-                                    <i class="icon-asterisk"></i> icon-asterisk
+                                <li><a href="#">用户订单</a>
+                                    <button type="button" class="close">×</button>
                                 </li>
-                                <li>
-                                    <i class="icon-ban-circle"></i> icon-ban-circle
+                                <li><a href="#">供货商</a>
+                                    <button type="button" class="close">×</button>
                                 </li>
-                                <li>
-                                    <i class="icon-bar-chart"></i> icon-bar-chart
-                                </li>
-                                <li>
-                                    <i class="icon-barcode"></i> icon-barcode
-                                </li>
-                                <li>
-                                    <i class="icon-beaker"></i> icon-beaker
-                                </li>
-                                <li>
-                                    <i class="icon-beer"></i> icon-beer
-                                </li>
-                                <li>
-                                    <i class="icon-bell"></i> icon-bell
-                                </li>
-                                <li>
-                                    <i class="icon-bell-alt"></i> icon-bell-alt
-                                </li>
-                                <li>
-                                    <i class="icon-bolt"></i> icon-bolt
-                                </li>
-                                <li>
-                                    <i class="icon-book"></i> icon-book
-                                </li>
-                                <li>
-                                    <i class="icon-bookmark"></i> icon-bookmark
-                                </li>
-                                <li>
-                                    <i class="icon-bookmark-empty"></i> icon-bookmark-empty
-                                </li>
-                                <li>
-                                    <i class="icon-briefcase"></i> icon-briefcase
-                                </li>
-                                <li>
-                                    <i class="icon-bullhorn"></i> icon-bullhorn
-                                </li>
-                                <li>
-                                    <i class="icon-calendar"></i> icon-calendar
-                                </li>
-                                <li>
-                                    <i class="icon-camera"></i> icon-camera
-                                </li>
-                                <li>
-                                    <i class="icon-camera-retro"></i> icon-camera-retro
-                                </li>
-                                <li>
-                                    <i class="icon-certificate"></i> icon-certificate
-                                </li>
-                                <li>
-                                    <i class="icon-check"></i> icon-check
-                                </li>
-                                <li>
-                                    <i class="icon-check-empty"></i> icon-check-empty
-                                </li>
-                                <li>
-                                    <i class="icon-circle"></i> icon-circle
-                                </li>
-                                <li>
-                                    <i class="icon-circle-blank"></i> icon-circle-blank
-                                </li>
-                                <li>
-                                    <i class="icon-cloud"></i> icon-cloud
-                                </li>
-                                <li>
-                                    <i class="icon-cloud-download"></i> icon-cloud-download
-                                </li>
-                                <li>
-                                    <i class="icon-cloud-upload"></i> icon-cloud-upload
-                                </li>
-                                <li>
-                                    <i class="icon-coffee"></i> icon-coffee
-                                </li>
-                                <li>
-                                    <i class="icon-cog"></i> icon-cog
-                                </li>
-                                <li>
-                                    <i class="icon-cogs"></i> icon-cogs
-                                </li>
-                                <li>
-                                    <i class="icon-comment"></i> icon-comment
-                                </li>
-                                <li>
-                                    <i class="icon-comment-alt"></i> icon-comment-alt
-                                </li>
-                                <li>
-                                    <i class="icon-comments"></i> icon-comments
-                                </li>
-                                <li>
-                                    <i class="icon-comments-alt"></i> icon-comments-alt
-                                </li>
-                                <li>
-                                    <i class="icon-credit-card"></i> icon-credit-card
-                                </li>
-                                <li>
-                                    <i class="icon-dashboard"></i> icon-dashboard
-                                </li>
-                                <li>
-                                    <i class="icon-desktop"></i> icon-desktop
-                                </li>
-                                <li>
-                                    <i class="icon-download"></i> icon-download
-                                </li>
-                                <li>
-                                    <i class="icon-download-alt"></i> icon-download-alt
+                                <li><a href="#">库存盘点操作</a>
+                                    <button type="button" class="close">×</button>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-edit"></i> icon-edit
-                                </li>
-                                <li>
-                                    <i class="icon-envelope"></i> icon-envelope
-                                </li>
-                                <li>
-                                    <i class="icon-envelope-alt"></i> icon-envelope-alt
-                                </li>
-                                <li>
-                                    <i class="icon-exchange"></i> icon-exchange
-                                </li>
-                                <li>
-                                    <i class="icon-exclamation-sign"></i> icon-exclamation-sign
-                                </li>
-                                <li>
-                                    <i class="icon-external-link"></i> icon-external-link
-                                </li>
-                                <li>
-                                    <i class="icon-eye-close"></i> icon-eye-close
-                                </li>
-                                <li>
-                                    <i class="icon-eye-open"></i> icon-eye-open
-                                </li>
-                                <li>
-                                    <i class="icon-facetime-video"></i> icon-facetime-video
-                                </li>
-                                <li>
-                                    <i class="icon-fighter-jet"></i> icon-fighter-jet
-                                </li>
-                                <li>
-                                    <i class="icon-film"></i> icon-film
-                                </li>
-                                <li>
-                                    <i class="icon-filter"></i> icon-filter
-                                </li>
-                                <li>
-                                    <i class="icon-fire"></i> icon-fire
-                                </li>
-                                <li>
-                                    <i class="icon-flag"></i> icon-flag
-                                </li>
-                                <li>
-                                    <i class="icon-folder-close"></i> icon-folder-close
-                                </li>
-                                <li>
-                                    <i class="icon-folder-open"></i> icon-folder-open
-                                </li>
-                                <li>
-                                    <i class="icon-folder-close-alt"></i> icon-folder-close-alt
-                                </li>
-                                <li>
-                                    <i class="icon-folder-open-alt"></i> icon-folder-open-alt
-                                </li>
-                                <li>
-                                    <i class="icon-food"></i> icon-food
-                                </li>
-                                <li>
-                                    <i class="icon-gift"></i> icon-gift
-                                </li>
-                                <li>
-                                    <i class="icon-glass"></i> icon-glass
-                                </li>
-                                <li>
-                                    <i class="icon-globe"></i> icon-globe
-                                </li>
-                                <li>
-                                    <i class="icon-group"></i> icon-group
-                                </li>
-                                <li>
-                                    <i class="icon-hdd"></i> icon-hdd
-                                </li>
-                                <li>
-                                    <i class="icon-headphones"></i> icon-headphones
-                                </li>
-                                <li>
-                                    <i class="icon-heart"></i> icon-heart
-                                </li>
-                                <li>
-                                    <i class="icon-heart-empty"></i> icon-heart-empty
-                                </li>
-                                <li>
-                                    <i class="icon-home"></i> icon-home
-                                </li>
-                                <li>
-                                    <i class="icon-inbox"></i> icon-inbox
-                                </li>
-                                <li>
-                                    <i class="icon-info-sign"></i> icon-info-sign
-                                </li>
-                                <li>
-                                    <i class="icon-key"></i> icon-key
-                                </li>
-                                <li>
-                                    <i class="icon-leaf"></i> icon-leaf
-                                </li>
-                                <li>
-                                    <i class="icon-laptop"></i> icon-laptop
-                                </li>
-                                <li>
-                                    <i class="icon-legal"></i> icon-legal
-                                </li>
-                                <li>
-                                    <i class="icon-lemon"></i> icon-lemon
-                                </li>
-                                <li>
-                                    <i class="icon-lightbulb"></i> icon-lightbulb
-                                </li>
-                                <li>
-                                    <i class="icon-lock"></i> icon-lock
-                                </li>
-                                <li>
-                                    <i class="icon-unlock"></i> icon-unlock
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-magic"></i> icon-magic
-                                </li>
-                                <li>
-                                    <i class="icon-magnet"></i> icon-magnet
-                                </li>
-                                <li>
-                                    <i class="icon-map-marker"></i> icon-map-marker
-                                </li>
-                                <li>
-                                    <i class="icon-minus"></i> icon-minus
-                                </li>
-                                <li>
-                                    <i class="icon-minus-sign"></i> icon-minus-sign
-                                </li>
-                                <li>
-                                    <i class="icon-mobile-phone"></i> icon-mobile-phone
-                                </li>
-                                <li>
-                                    <i class="icon-money"></i> icon-money
-                                </li>
-                                <li>
-                                    <i class="icon-move"></i> icon-move
-                                </li>
-                                <li>
-                                    <i class="icon-music"></i> icon-music
-                                </li>
-                                <li>
-                                    <i class="icon-off"></i> icon-off
-                                </li>
-                                <li>
-                                    <i class="icon-ok"></i> icon-ok
-                                </li>
-                                <li>
-                                    <i class="icon-ok-circle"></i> icon-ok-circle
-                                </li>
-                                <li>
-                                    <i class="icon-ok-sign"></i> icon-ok-sign
-                                </li>
-                                <li>
-                                    <i class="icon-pencil"></i> icon-pencil
-                                </li>
-                                <li>
-                                    <i class="icon-picture"></i> icon-picture
-                                </li>
-                                <li>
-                                    <i class="icon-plane"></i> icon-plane
-                                </li>
-                                <li>
-                                    <i class="icon-plus"></i> icon-plus
-                                </li>
-                                <li>
-                                    <i class="icon-plus-sign"></i> icon-plus-sign
-                                </li>
-                                <li>
-                                    <i class="icon-print"></i> icon-print
-                                </li>
-                                <li>
-                                    <i class="icon-pushpin"></i> icon-pushpin
-                                </li>
-                                <li>
-                                    <i class="icon-qrcode"></i> icon-qrcode
-                                </li>
-                                <li>
-                                    <i class="icon-question-sign"></i> icon-question-sign
-                                </li>
-                                <li>
-                                    <i class="icon-quote-left"></i> icon-quote-left
-                                </li>
-                                <li>
-                                    <i class="icon-quote-right"></i> icon-quote-right
-                                </li>
-                                <li>
-                                    <i class="icon-random"></i> icon-random
-                                </li>
-                                <li>
-                                    <i class="icon-refresh"></i> icon-refresh
-                                </li>
-                                <li>
-                                    <i class="icon-remove"></i> icon-remove
-                                </li>
-                                <li>
-                                    <i class="icon-remove-circle"></i> icon-remove-circle
-                                </li>
-                                <li>
-                                    <i class="icon-remove-sign"></i> icon-remove-sign
-                                </li>
-                                <li>
-                                    <i class="icon-reorder"></i> icon-reorder
-                                </li>
-                                <li>
-                                    <i class="icon-reply"></i> icon-reply
-                                </li>
-                                <li>
-                                    <i class="icon-resize-horizontal"></i> icon-resize-horizontal
-                                </li>
-                                <li>
-                                    <i class="icon-resize-vertical"></i> icon-resize-vertical
-                                </li>
-                                <li>
-                                    <i class="icon-retweet"></i> icon-retweet
-                                </li>
-                                <li>
-                                    <i class="icon-road"></i> icon-road
-                                </li>
-                                <li>
-                                    <i class="icon-rss"></i> icon-rss
-                                </li>
-                                <li>
-                                    <i class="icon-screenshot"></i> icon-screenshot
-                                </li>
-                                <li>
-                                    <i class="icon-search"></i> icon-search
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-share"></i> icon-share
-                                </li>
-                                <li>
-                                    <i class="icon-share-alt"></i> icon-share-alt
-                                </li>
-                                <li>
-                                    <i class="icon-shopping-cart"></i> icon-shopping-cart
-                                </li>
-                                <li>
-                                    <i class="icon-signal"></i> icon-signal
-                                </li>
-                                <li>
-                                    <i class="icon-signin"></i> icon-signin
-                                </li>
-                                <li>
-                                    <i class="icon-signout"></i> icon-signout
-                                </li>
-                                <li>
-                                    <i class="icon-sitemap"></i> icon-sitemap
-                                </li>
-                                <li>
-                                    <i class="icon-sort"></i> icon-sort
-                                </li>
-                                <li>
-                                    <i class="icon-sort-down"></i> icon-sort-down
-                                </li>
-                                <li>
-                                    <i class="icon-sort-up"></i> icon-sort-up
-                                </li>
-                                <li>
-                                    <i class="icon-spinner"></i> icon-spinner
-                                </li>
-                                <li>
-                                    <i class="icon-star"></i> icon-star
-                                </li>
-                                <li>
-                                    <i class="icon-star-empty"></i> icon-star-empty
-                                </li>
-                                <li>
-                                    <i class="icon-star-half"></i> icon-star-half
-                                </li>
-                                <li>
-                                    <i class="icon-tablet"></i> icon-tablet
-                                </li>
-                                <li>
-                                    <i class="icon-tag"></i> icon-tag
-                                </li>
-                                <li>
-                                    <i class="icon-tags"></i> icon-tags
-                                </li>
-                                <li>
-                                    <i class="icon-tasks"></i> icon-tasks
-                                </li>
-                                <li>
-                                    <i class="icon-thumbs-down"></i> icon-thumbs-down
-                                </li>
-                                <li>
-                                    <i class="icon-thumbs-up"></i> icon-thumbs-up
-                                </li>
-                                <li>
-                                    <i class="icon-time"></i> icon-time
-                                </li>
-                                <li>
-                                    <i class="icon-tint"></i> icon-tint
-                                </li>
-                                <li>
-                                    <i class="icon-trash"></i> icon-trash
-                                </li>
-                                <li>
-                                    <i class="icon-trophy"></i> icon-trophy
-                                </li>
-                                <li>
-                                    <i class="icon-truck"></i> icon-truck
-                                </li>
-                                <li>
-                                    <i class="icon-umbrella"></i> icon-umbrella
-                                </li>
-                                <li>
-                                    <i class="icon-upload"></i> icon-upload
-                                </li>
-                                <li>
-                                    <i class="icon-upload-alt"></i> icon-upload-alt
-                                </li>
-                                <li>
-                                    <i class="icon-user"></i> icon-user
-                                </li>
-                                <li>
-                                    <i class="icon-user-md"></i> icon-user-md
-                                </li>
-                                <li>
-                                    <i class="icon-volume-off"></i> icon-volume-off
-                                </li>
-                                <li>
-                                    <i class="icon-volume-down"></i> icon-volume-down
-                                </li>
-                                <li>
-                                    <i class="icon-volume-up"></i> icon-volume-up
-                                </li>
-                                <li>
-                                    <i class="icon-warning-sign"></i> icon-warning-sign
-                                </li>
-                                <li>
-                                    <i class="icon-wrench"></i> icon-wrench
-                                </li>
-                                <li>
-                                    <i class="icon-zoom-in"></i> icon-zoom-in
-                                </li>
-                                <li>
-                                    <i class="icon-zoom-out"></i> icon-zoom-out
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">文本编辑图标</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-file"></i> icon-file
-                                </li>
-                                <li>
-                                    <i class="icon-file-alt"></i> icon-file-alt
-                                </li>
-                                <li>
-                                    <i class="icon-cut"></i> icon-cut
-                                </li>
-                                <li>
-                                    <i class="icon-copy"></i> icon-copy
-                                </li>
-                                <li>
-                                    <i class="icon-paste"></i> icon-paste
-                                </li>
-                                <li>
-                                    <i class="icon-save"></i> icon-save
-                                </li>
-                                <li>
-                                    <i class="icon-undo"></i> icon-undo
-                                </li>
-                                <li>
-                                    <i class="icon-repeat"></i> icon-repeat
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-text-height"></i> icon-text-height
-                                </li>
-                                <li>
-                                    <i class="icon-text-width"></i> icon-text-width
-                                </li>
-                                <li>
-                                    <i class="icon-align-left"></i> icon-align-left
-                                </li>
-                                <li>
-                                    <i class="icon-align-center"></i> icon-align-center
-                                </li>
-                                <li>
-                                    <i class="icon-align-right"></i> icon-align-right
-                                </li>
-                                <li>
-                                    <i class="icon-align-justify"></i> icon-align-justify
-                                </li>
-                                <li>
-                                    <i class="icon-indent-left"></i> icon-indent-left
-                                </li>
-                                <li>
-                                    <i class="icon-indent-right"></i> icon-indent-right
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-font"></i> icon-font
-                                </li>
-                                <li>
-                                    <i class="icon-bold"></i> icon-bold
-                                </li>
-                                <li>
-                                    <i class="icon-italic"></i> icon-italic
-                                </li>
-                                <li>
-                                    <i class="icon-strikethrough"></i> icon-strikethrough
-                                </li>
-                                <li>
-                                    <i class="icon-underline"></i> icon-underline
-                                </li>
-                                <li>
-                                    <i class="icon-link"></i> icon-link
-                                </li>
-                                <li>
-                                    <i class="icon-paper-clip"></i> icon-paper-clip
-                                </li>
-                                <li>
-                                    <i class="icon-columns"></i> icon-columns
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-table"></i> icon-table
-                                </li>
-                                <li>
-                                    <i class="icon-th-large"></i> icon-th-large
-                                </li>
-                                <li>
-                                    <i class="icon-th"></i> icon-th
-                                </li>
-                                <li>
-                                    <i class="icon-th-list"></i> icon-th-list
-                                </li>
-                                <li>
-                                    <i class="icon-list"></i> icon-list
-                                </li>
-                                <li>
-                                    <i class="icon-list-ol"></i> icon-list-ol
-                                </li>
-                                <li>
-                                    <i class="icon-list-ul"></i> icon-list-ul
-                                </li>
-                                <li>
-                                    <i class="icon-list-alt"></i> icon-list-alt
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">方向性图标</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-angle-left"></i> icon-angle-left
-                                </li>
-                                <li>
-                                    <i class="icon-angle-right"></i> icon-angle-right
-                                </li>
-                                <li>
-                                    <i class="icon-angle-up"></i> icon-angle-up
-                                </li>
-                                <li>
-                                    <i class="icon-angle-down"></i> icon-angle-down
-                                </li>
-                                <li>
-                                    <i class="icon-arrow-down"></i> icon-arrow-down
-                                </li>
-                                <li>
-                                    <i class="icon-arrow-left"></i> icon-arrow-left
-                                </li>
-                                <li>
-                                    <i class="icon-arrow-right"></i> icon-arrow-right
-                                </li>
-                                <li>
-                                    <i class="icon-arrow-up"></i> icon-arrow-up
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-caret-down"></i> icon-caret-down
-                                </li>
-                                <li>
-                                    <i class="icon-caret-left"></i> icon-caret-left
-                                </li>
-                                <li>
-                                    <i class="icon-caret-right"></i> icon-caret-right
-                                </li>
-                                <li>
-                                    <i class="icon-caret-up"></i> icon-caret-up
-                                </li>
-                                <li>
-                                    <i class="icon-chevron-down"></i> icon-chevron-down
-                                </li>
-                                <li>
-                                    <i class="icon-chevron-left"></i> icon-chevron-left
-                                </li>
-                                <li>
-                                    <i class="icon-chevron-right"></i> icon-chevron-right
-                                </li>
-                                <li>
-                                    <i class="icon-chevron-up"></i> icon-chevron-up
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-circle-arrow-down"></i> icon-circle-arrow-down
-                                </li>
-                                <li>
-                                    <i class="icon-circle-arrow-left"></i> icon-circle-arrow-left
-                                </li>
-                                <li>
-                                    <i class="icon-circle-arrow-right"></i> icon-circle-arrow-right
-                                </li>
-                                <li>
-                                    <i class="icon-circle-arrow-up"></i> icon-circle-arrow-up
-                                </li>
-                                <li>
-                                    <i class="icon-double-angle-left"></i> icon-double-angle-left
-                                </li>
-                                <li>
-                                    <i class="icon-double-angle-right"></i> icon-double-angle-right
-                                </li>
-                                <li>
-                                    <i class="icon-double-angle-up"></i> icon-double-angle-up
-                                </li>
-                                <li>
-                                    <i class="icon-double-angle-down"></i> icon-double-angle-down
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-hand-down"></i> icon-hand-down
-                                </li>
-                                <li>
-                                    <i class="icon-hand-left"></i> icon-hand-left
-                                </li>
-                                <li>
-                                    <i class="icon-hand-right"></i> icon-hand-right
-                                </li>
-                                <li>
-                                    <i class="icon-hand-up"></i> icon-hand-up
-                                </li>
-                                <li>
-                                    <i class="icon-circle"></i> icon-circle
-                                </li>
-                                <li>
-                                    <i class="icon-circle-blank"></i> icon-circle-blank
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">视频播放图标</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-play-circle"></i> icon-play-circle
-                                </li>
-                                <li>
-                                    <i class="icon-play"></i> icon-play
-                                </li>
-                                <li>
-                                    <i class="icon-pause"></i> icon-pause
-                                </li>
-                                <li>
-                                    <i class="icon-stop"></i> icon-stop
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-step-backward"></i> icon-step-backward
-                                </li>
-                                <li>
-                                    <i class="icon-fast-backward"></i> icon-fast-backward
-                                </li>
-                                <li>
-                                    <i class="icon-backward"></i> icon-backward
-                                </li>
-                                <li>
-                                    <i class="icon-forward"></i> icon-forward
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-fast-forward"></i> icon-fast-forward
-                                </li>
-                                <li>
-                                    <i class="icon-step-forward"></i> icon-step-forward
-                                </li>
-                                <li>
-                                    <i class="icon-eject"></i> icon-eject
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-fullscreen"></i> icon-fullscreen
-                                </li>
-                                <li>
-                                    <i class="icon-resize-full"></i> icon-resize-full
-                                </li>
-                                <li>
-                                    <i class="icon-resize-small"></i> icon-resize-small
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">社交图标</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-phone"></i> icon-phone
-                                </li>
-                                <li>
-                                    <i class="icon-phone-sign"></i> icon-phone-sign
-                                </li>
-                                <li>
-                                    <i class="icon-facebook"></i> icon-facebook
-                                </li>
-                                <li>
-                                    <i class="icon-facebook-sign"></i> icon-facebook-sign
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-twitter"></i> icon-twitter
-                                </li>
-                                <li>
-                                    <i class="icon-twitter-sign"></i> icon-twitter-sign
-                                </li>
-                                <li>
-                                    <i class="icon-github"></i> icon-github
-                                </li>
-                                <li>
-                                    <i class="icon-github-alt"></i> icon-github-alt
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-github-sign"></i> icon-github-sign
-                                </li>
-                                <li>
-                                    <i class="icon-linkedin"></i> icon-linkedin
-                                </li>
-                                <li>
-                                    <i class="icon-linkedin-sign"></i> icon-linkedin-sign
-                                </li>
-                                <li>
-                                    <i class="icon-pinterest"></i> icon-pinterest
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-pinterest-sign"></i> icon-pinterest-sign
-                                </li>
-                                <li>
-                                    <i class="icon-google-plus"></i> icon-google-plus
-                                </li>
-                                <li>
-                                    <i class="icon-google-plus-sign"></i> icon-google-plus-sign
-                                </li>
-                                <li>
-                                    <i class="icon-sign-blank"></i> icon-sign-blank
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <span class="title">其他</span>
-                </div>
-                <div class="box-content padded">
-                    <div class="row-fluid">
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-ambulance"></i> icon-ambulance
-                                </li>
-                                <li>
-                                    <i class="icon-beaker"></i> icon-beaker
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-h-sign"></i> icon-h-sign
-                                </li>
-                                <li>
-                                    <i class="icon-hospital"></i> icon-hospital
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-medkit"></i> icon-medkit
-                                </li>
-                                <li>
-                                    <i class="icon-plus-sign-alt"></i> icon-plus-sign-alt
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="span3">
-                            <ul class="the-icons">
-                                <li>
-                                    <i class="icon-stethoscope"></i> icon-stethoscope
-                                </li>
-                                <li>
-                                    <i class="icon-user-md"></i> icon-user-md
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- E 主要内容区域__小图标icons -->
-        <!-- S 主要内容区域__布局grid -->
-        <div class="container-fluid padded">
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span12</span>
                         </div>
                         <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
+                            大家好，为方便业务操作和查看，我们对仓储系统菜单按业务类型进行了整合，菜单命名
+                            <br/>规则统一，明确；现在处于试用阶段，请尽快熟悉！
+                            <br/>对菜单整理有问题请联系：二蛋 13******** 2dan@**.com
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span6</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span6</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span4">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span4</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span4</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span4</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span3">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span3</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span5">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span5</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span4</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span2">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span2</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span4</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title"><i class="icon-th-list"></i> Span6</span>
-                        </div>
-                        <div class="box-content padded">
-                            准时到达国家会议中心签到处，可能人多需要排队哦。用购票账号登录，向工作人员展示电子门票，领取随身装备，确认身份后入场。入场和老朋友相聚，认识更多新朋友。用手机和大屏幕互动、拍下精彩瞬间，记得提前充好电哦。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- E 主要内容区域__布局grid -->
-        <!-- S 主要内容区域__通用元素general -->
-        <div class="container-fluid padded">
-            <div class="box core-animate-bars">
-                <div class="box-header">
-                    <div class="title">进度条</div>
-                    <ul class="box-toolbar">
-                        <li class="toolbar-link">
-                            <a href="#">
-                                <i class="icon-refresh"></i> Click to randomize bars
-                            </a>
-                        </li>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#">介绍</a></li>
+                        <li><a href="#">消息</a></li>
+                        <li><a href="#">设置</a></li>
                     </ul>
                 </div>
-                <div class="box-content">
-                    <div class="box-section">
-                        <div class="bar-progress">
-                            <div class="bar-gray tip" title="48%" data-percent="48"></div>
-                        </div>
-                    </div>
-                    <div class="box-section">
-                        <div class="bar-progress">
-                            <div class="bar-blue tip" title="51%" data-percent="51"></div>
-                        </div>
-                    </div>
-                    <div class="box-section">
-                        <div class="bar-progress">
-                            <div class="bar-orange tip" title="50%" data-percent="50"></div>
-                        </div>
-                    </div>
-                    <div class="box-section">
-                        <div class="bar-progress">
-                            <div class="bar-black tip" title="10%" data-percent="10"></div>
-                        </div>
-                    </div>
-                    <div class="box-section">
-                        <div class="bar-progress">
-                            <div class="bar-red tip" title="32%" data-percent="32"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="accordion" id="accordion2">
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		                        可折叠的组 #1
-		                      </a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse in">
-                                <div class="accordion-inner">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		                        可折叠的组 #2
-		                      </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		                        可折叠的组 #3
-		                      </a>
-                            </div>
-                            <div id="collapseThree" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">泡泡</span>
-                        </div>
-                        <div class="box-content padded">
-                            <a class="growl-info btn btn-blue" href="#">Info</a>
-                            <a class="growl-success btn btn-green" href="#">Success</a>
-                            <a class="growl-warn btn btn-gray" href="#">Warning</a>
-                            <a class="growl-error btn btn-red" href="#">Error</a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-header">
-                            <ul class="nav nav-tabs nav-tabs-left">
-                                <li class="active"><a href="#labels" data-toggle="tab">小标签</a></li>
-                                <li><a href="#badges" data-toggle="tab">小徽标</a></li>
-                            </ul>
-                        </div>
-                        <div class="box-content padded">
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="labels">
-                                    <span style="margin-right: 10px" class="label label-blue">10</span>
-                                    <span style="margin-right: 10px" class="label label-gray">15</span>
-                                    <span style="margin-right: 10px" class="label label-green">20</span>
-                                    <span style="margin-right: 10px" class="label label-red">25</span>
-                                    <span style="margin-right: 10px" class="label label-dark-red">30</span>
-                                    <span style="margin-right: 10px" class="label label-black">35</span>
-                                </div>
-                                <div class="tab-pane" id="badges" style="padding: 5px">
-                                    <span style="margin-right: 10px" class="badge badge-blue">10</span>
-                                    <span style="margin-right: 10px" class="badge badge-gray">15</span>
-                                    <span style="margin-right: 10px" class="badge badge-green">20</span>
-                                    <span style="margin-right: 10px" class="badge badge-red">25</span>
-                                    <span style="margin-right: 10px" class="badge badge-dark-red">30</span>
-                                    <span style="margin-right: 10px" class="badge badge-black">35</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="alert alert-block">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <h4>Warning!</h4> Best check yo self, you're not...
-                    </div>
-                    <div class="alert alert-error">
-                        <button type="button" class="close" data-dismiss="alert">Ã—</button>
-                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-                    </div>
-                    <div class="alert alert-info">
-                        <button type="button" class="close" data-dismiss="alert">Ã—</button>
-                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-                    </div>
-                    <div class="alert alert-success">
-                        <button type="button" class="close" data-dismiss="alert">Ã—</button>
-                        <strong>Well done!</strong> You successfully read this important alert message.
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="pagination pagination-centered pagination-large">
-                        <ul>
-                            <li><a href="#">Prev</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                    <div class="pagination pagination-centered">
-                        <ul>
-                            <li><a href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                    <div class="pagination pagination-centered pagination-small">
-                        <ul>
-                            <li><a href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="active"><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                    <div class="pagination pagination-centered pagination-mini">
-                        <ul>
-                            <li><a href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="active"><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="modal-simple" class="modal hide fade" tabindex="-1" data-width="760">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h6 id="modal-tablesLabel">Modal Heading</h6>
-                </div>
-                <div class="modal-body">
-                    Cool stuff eh?
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button class="btn btn-blue">Save changes</button>
-                </div>
-            </div>
-            <div id="modal-form" class="modal hide fade">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h6 id="modal-formLabel">Modal Heading</h6>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal fill-up separate-sections">
-                        <div>
-                            <label>Here's a standard text field</label>
-                            <input type="text" name="regular" placeholder="Your name" />
-                        </div>
-                        <div class="divider"><span></span></div>
-                        <div class="row-fluid">
-                            <div class="span6">
-                                <label>And a dropdown with search:</label>
-                                <select class="chzn-select" name="colors">
-                                    <option value="Amber">Amber</option>
-                                    <option value="Aero blue">Aero blue</option>
-                                    <option value="Air Force blue (RAF)">Air Force blue (RAF)</option>
-                                    <option value="Amethyst">Amethyst</option>
-                                    <option value="Antique fuchsia ">Antique fuchsia </option>
-                                    <option value="Antique brass">Antique brass</option>
-                                    <option value="Alizarin crimson">Alizarin crimson</option>
-                                    <option value="Alice blue">Alice blue</option>
-                                    <option value="Alabama Crimson">Alabama Crimson</option>
-                                    <option value="Android Green">Android Green</option>
-                                    <option value="American rose">American rose</option>
-                                    <option value="Anti-flash white">Anti-flash white</option>
-                                    <option value="Air Force blue (USAF)">Air Force blue (USAF)</option>
-                                    <option value="Amaranth">Amaranth</option>
-                                    <option value="SAE/ECE Amber (color)">SAE/ECE Amber (color)</option>
-                                    <option value="Air superiority blue">Air superiority blue</option>
-                                    <option value="Alloy orange">Alloy orange</option>
-                                    <option value="Antique bronze">Antique bronze</option>
-                                    <option value="Amazon">Amazon</option>
-                                    <option value="Almond">Almond</option>
-                                </select>
-                            </div>
-                            <div class="span6">
-                                <label>or without search...</label>
-                                <select class="uniform" name="colors">
-                                    <option value="American rose">American rose</option>
-                                    <option value="Amazon">Amazon</option>
-                                    <option value="Antique brass">Antique brass</option>
-                                    <option value="Air Force blue (USAF)">Air Force blue (USAF)</option>
-                                    <option value="Alabama Crimson">Alabama Crimson</option>
-                                    <option value="Antique bronze">Antique bronze</option>
-                                    <option value="Air Force blue (RAF)">Air Force blue (RAF)</option>
-                                    <option value="Anti-flash white">Anti-flash white</option>
-                                    <option value="Android Green">Android Green</option>
-                                    <option value="Antique fuchsia ">Antique fuchsia </option>
-                                    <option value="Air superiority blue">Air superiority blue</option>
-                                    <option value="Alizarin crimson">Alizarin crimson</option>
-                                    <option value="Amber">Amber</option>
-                                    <option value="Amaranth">Amaranth</option>
-                                    <option value="SAE/ECE Amber (color)">SAE/ECE Amber (color)</option>
-                                    <option value="Aero blue">Aero blue</option>
-                                    <option value="Almond">Almond</option>
-                                    <option value="Alice blue">Alice blue</option>
-                                    <option value="Alloy orange">Alloy orange</option>
-                                    <option value="Amethyst">Amethyst</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="divider"><span></span></div>
-                        <div>
-                            <textarea rows="4" placeholder="Enter your comments here"></textarea>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span6">
-                                <label class="checkbox">
-                                    <input type="checkbox" class="check"> Check me out!
-                                </label>
-                            </div>
-                            <div class="span6">
-                                <label class="radio">
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> The number one option
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button class="btn btn-blue">Save changes</button>
-                </div>
-            </div>
-            <div id="modal-tables" class="modal hide fade">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h6 id="modal-tablesLabel">Modal Heading</h6>
-                </div>
-                <div class="modal-body nopadding">
-                    <div id="dataTables">
-                        <table cellpadding="0" cellspacing="0" border="0" class="dTable-small responsive">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div>渲染引擎</div>
-                                    </th>
-                                    <th>
-                                        <div>浏览器</div>
-                                    </th>
-                                    <th>
-                                        <div>系统平台</div>
-                                    </th>
-                                    <th>
-                                        <div>版本号</div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 4.0</td>
-                                    <td>Win 95+</td>
-                                    <td class="center">4</td>
-                                </tr>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.0</td>
-                                    <td>Win 95+</td>
-                                    <td class="center">5</td>
-                                </tr>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.5</td>
-                                    <td>Win 95+</td>
-                                    <td class="center">5.5</td>
-                                </tr>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 6</td>
-                                    <td>Win 98+</td>
-                                    <td class="center">6</td>
-                                </tr>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 7</td>
-                                    <td>Win XP SP2+</td>
-                                    <td class="center">7</td>
-                                </tr>
-                                <tr>
-                                    <td>Trident</td>
-                                    <td>AOL browser (AOL desktop)</td>
-                                    <td>Win XP</td>
-                                    <td class="center">6</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Firefox 1.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Firefox 1.5</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Firefox 2.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Firefox 3.0</td>
-                                    <td>Win 2k+ / OSX.3+</td>
-                                    <td class="center">1.9</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Camino 1.0</td>
-                                    <td>OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Camino 1.5</td>
-                                    <td>OSX.3+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Netscape 7.2</td>
-                                    <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                    <td class="center">1.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Netscape Browser 8</td>
-                                    <td>Win 98SE+</td>
-                                    <td class="center">1.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Netscape Navigator 9</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.0</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.1</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.1</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.2</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.2</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.3</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.3</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.4</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.4</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.5</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.5</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.6</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1.6</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.7</td>
-                                    <td>Win 98+ / OSX.1+</td>
-                                    <td class="center">1.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.8</td>
-                                    <td>Win 98+ / OSX.1+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Seamonkey 1.1</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Gecko</td>
-                                    <td>Epiphany 2.20</td>
-                                    <td>Gnome</td>
-                                    <td class="center">1.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>Safari 1.2</td>
-                                    <td>OSX.3</td>
-                                    <td class="center">125.5</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>Safari 1.3</td>
-                                    <td>OSX.3</td>
-                                    <td class="center">312.8</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>Safari 2.0</td>
-                                    <td>OSX.4+</td>
-                                    <td class="center">419.3</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>Safari 3.0</td>
-                                    <td>OSX.4+</td>
-                                    <td class="center">522.1</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>OmniWeb 5.5</td>
-                                    <td>OSX.4+</td>
-                                    <td class="center">420</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>iPod Touch / iPhone</td>
-                                    <td>iPod</td>
-                                    <td class="center">420.1</td>
-                                </tr>
-                                <tr>
-                                    <td>Webkit</td>
-                                    <td>S60</td>
-                                    <td>S60</td>
-                                    <td class="center">413</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 7.0</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 7.5</td>
-                                    <td>Win 95+ / OSX.2+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 8.0</td>
-                                    <td>Win 95+ / OSX.2+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 8.5</td>
-                                    <td>Win 95+ / OSX.2+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 9.0</td>
-                                    <td>Win 95+ / OSX.3+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 9.2</td>
-                                    <td>Win 88+ / OSX.3+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera 9.5</td>
-                                    <td>Win 88+ / OSX.3+</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Opera for Wii</td>
-                                    <td>Wii</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Nokia N800</td>
-                                    <td>N800</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Presto</td>
-                                    <td>Nintendo DS browser</td>
-                                    <td>Nintendo DS</td>
-                                    <td class="center">8.5</td>
-                                </tr>
-                                <tr>
-                                    <td>KHTML</td>
-                                    <td>Konqureror 3.1</td>
-                                    <td>KDE 3.1</td>
-                                    <td class="center">3.1</td>
-                                </tr>
-                                <tr>
-                                    <td>KHTML</td>
-                                    <td>Konqureror 3.3</td>
-                                    <td>KDE 3.3</td>
-                                    <td class="center">3.3</td>
-                                </tr>
-                                <tr>
-                                    <td>KHTML</td>
-                                    <td>Konqureror 3.5</td>
-                                    <td>KDE 3.5</td>
-                                    <td class="center">3.5</td>
-                                </tr>
-                                <tr>
-                                    <td>Tasman</td>
-                                    <td>Internet Explorer 4.5</td>
-                                    <td>Mac OS 8-9</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Tasman</td>
-                                    <td>Internet Explorer 5.1</td>
-                                    <td>Mac OS 7.6-9</td>
-                                    <td class="center">1</td>
-                                </tr>
-                                <tr>
-                                    <td>Tasman</td>
-                                    <td>Internet Explorer 5.2</td>
-                                    <td>Mac OS 8-X</td>
-                                    <td class="center">1</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>NetFront 3.1</td>
-                                    <td>Embedded devices</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>NetFront 3.4</td>
-                                    <td>Embedded devices</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>Dillo 0.8</td>
-                                    <td>Embedded devices</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>Links</td>
-                                    <td>Text only</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>Lynx</td>
-                                    <td>Text only</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>IE Mobile</td>
-                                    <td>Windows Mobile 6</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Misc</td>
-                                    <td>PSP browser</td>
-                                    <td>PSP</td>
-                                    <td class="center">-</td>
-                                </tr>
-                                <tr>
-                                    <td>Other browsers</td>
-                                    <td>All others</td>
-                                    <td>-</td>
-                                    <td class="center">-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button class="btn btn-blue">Save changes</button>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">弹出层</span>
-                        </div>
-                        <div class="box-content padded">
-                            <a data-toggle="modal" href="#modal-simple" class="btn btn-blue"><i class="icon-comments-alt"></i> 简单模式</a>
-                            <a data-toggle="modal" href="#modal-form" class="btn btn-blue"><i class="icon-external-link"></i> 表单模式</a>
-                            <a data-toggle="modal" href="#modal-tables" class="btn btn-blue"><i class="icon-table"></i> 表格模式</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">提示</span>
-                        </div>
-                        <div class="box-content padded">
-                            <a href="#" class="btn btn-green" rel="tooltip" data-placement="top" data-original-title="Tooltip on top">on top</a>
-                            <a href="#" class="btn btn-green" rel="tooltip" data-placement="right" title="Tooltip on right">on right</a>
-                            <a href="#" class="btn btn-green" rel="tooltip" data-placement="bottom" title="Tooltip on bottom">on bottom</a>
-                            <a href="#" class="btn btn-green" rel="tooltip" data-placement="left" title="Tooltip on left">on left</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <ul class="nav nav-tabs nav-tabs-left">
-                                <li class="active"><a href="#home" data-toggle="tab"><i class="icon-home"></i></a></li>
-                                <li><a href="#messages" data-toggle="tab"><i class="icon-comments-alt"></i> <span>Messages</span></a></li>
-                                <li><a href="#settings" data-toggle="tab"><i class="icon-cog"></i> <span>Settings</span></a></li>
-                            </ul>
-                            <div class="title">TAB切换左</div>
-                        </div>
-                        <div class="box-content padded">
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home">Going home</div>
-                                <div class="tab-pane" id="profile">And now to the profile</div>
-                                <div class="tab-pane" id="messages">No new messages</div>
-                                <div class="tab-pane" id="settings">Changing the settings</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <div class="title">TAB切换右</div>
-                            <ul class="nav nav-tabs nav-tabs-right">
-                                <li class="active"><a href="#home2" data-toggle="tab"><i class="icon-home"></i></a></li>
-                                <li><a href="#messages2" data-toggle="tab"><i class="icon-comments-alt"></i> <span>Messages</span></a></li>
-                                <li><a href="#settings2" data-toggle="tab"><i class="icon-cog"></i> <span>Settings</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="box-content padded">
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home2">Going home</div>
-                                <div class="tab-pane" id="profile2">And now to the profile</div>
-                                <div class="tab-pane" id="messages2">No new messages</div>
-                                <div class="tab-pane" id="settings2">Changing the settings</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header">
-                    <div class="title">相册</div>
-                </div>
-                <div class="box-content">
-                    <div id="thumbs">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- E 主要内容区域__通用元素general -->
-        <!-- S 主要内容区域__TAB切换 -->
-        <div class="padded">
-            <div class="box">
-                <div class="box-header">
-                    <ul class="nav nav-tabs nav-tabs-left nav-tabs-wms">
-                        <li class="active"><a href="#">发货单查询</a>
-                            <button type="button" class="close">×</button>
-                        </li>
-                        <li><a href="#">用户订单</a>
-                            <button type="button" class="close">×</button>
-                        </li>
-                        <li><a href="#">供货商</a>
-                            <button type="button" class="close">×</button>
-                        </li>
-                        <li><a href="#">库存盘点操作</a>
-                            <button type="button" class="close">×</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="box-content padded">
-                    大家好，为方便业务操作和查看，我们对仓储系统菜单按业务类型进行了整合，菜单命名
-                    <br/>规则统一，明确；现在处于试用阶段，请尽快熟悉！
-                    <br/>对菜单整理有问题请联系：二蛋 13******** 2dan@**.com
-                </div>
-            </div>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">介绍</a></li>
-                <li><a href="#">消息</a></li>
-                <li><a href="#">设置</a></li>
-            </ul>
-        </div>
-        <!-- E 主要内容区域__TAB切换 -->
-        <!-- S 主要内容区域__绘图charts -->
-        <div class="container-fluid padded">
-            <div class="box">
-                <div class="box-header"><span class="title">综合图</span></div>
-                <div class="box-content padded">
-                    <div id="hightcharts_combin"></div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header"><span class="title">饼图A</span></div>
-                        <div class="box-content padded">
-                            <div id="hightcharts_pieA"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="span6">
-                    <div class="box">
-                        <div class="box-header">
-                            <span class="title">饼图B</span>
-                            <ul class="box-toolbar">
-                                <li><a class="btn btn-blue btn-mini">占位占位啊!</a></li>
-                            </ul>
-                        </div>
-                        <div class="box-content padded">
-                            <div id="hightcharts_pieB"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-header"><span class="title">柱状图</span></div>
-                <div class="box-content padded">
-                    <div id="hightcharts_column"></div>
-                </div>
-            </div>
-        </div>
-        <!-- E 主要内容区域__绘图charts -->
-    </div>
-    <!-- E 主要内容区域 -->
-    <!-- Le javascript
+                <!-- E 主要内容区域__TAB切换 -->
+                <!-- S 主要内容区域__绘图charts -->
+                <!-- E 主要内容区域 -->
+                <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- 通过CAT合并 UGLIFY 压缩BOOTSTRAP内置JS插件 包含以下文件 
+                <!-- Placed at the end of the document so the pages load faster -->
+                <!-- 通过CAT合并 UGLIFY 压缩BOOTSTRAP内置JS插件 包含以下文件 
     jquery.js bootstrap-transition.js bootstrap-alert.js bootstrap-modal.js bootstrap-dropdown.js bootstrap-scrollspy.js bootstrap-tab.js bootstrap-tooltip.js bootstrap-popover.js bootstrap-button.js bootstrap-collapse.js bootstrap-carousel.js bootstrap-typeahead.js bootstrap-datepicker.js bootstrap-datepicker.zh-CN.js-->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/bootstrap-modalmanager.js"></script>
-    <!-- 表单美化插件 -->
-    <script src="../assets/js/jquery.uniform.js"></script>
-    <!-- 非常强大的SELECT插件 http://ivaynberg.github.io/select2/ -->
-    <script src="../assets/js/select2.js"></script>
-    <!-- jquery 日历插件 -->
-    <script src="../assets/js/jquery.validationEngine.js"></script>
-    <script src="../assets/js/jquery.validationEngine-zh_CN.js"></script>
-    <!-- 用来生成静态或动态波谱图表效果 -->
-    <script src="../assets/js/jquery.sparkline.js"></script>
-    <!-- 多功能表格插件 -->
-    <script src="../assets/js/jquery.dataTables.js"></script>
-    <!-- 相册 支持TOUCH -->
-    <script src="../assets/js/touchTouch.jquery.js"></script>
-    <!-- 泡泡消息 -->
-    <script src="../assets/js/jquery.gritter.js"></script>
-    <!-- highcharts绘图 包含highcharts.js exporting.js -->
-    <script src="../assets/js/highcharts.js"></script>
-    <script src="../assets/js/exporting.js"></script>
-    <script type="text/javascript">
-    $(function() {
+                <script src="../assets/js/bootstrap.min.js"></script>
+                <script src="../assets/js/bootstrap-modalmanager.js"></script>
+                <!-- 表单美化插件 -->
+                <script src="../assets/js/jquery.uniform.js"></script>
+                <!-- 非常强大的SELECT插件 http://ivaynberg.github.io/select2/ -->
+                <script src="../assets/js/select2.js"></script>
+                <!-- jquery 日历插件 -->
+                <script src="../assets/js/jquery.validationEngine.js"></script>
+                <script src="../assets/js/jquery.validationEngine-zh_CN.js"></script>
+                <!-- 用来生成静态或动态波谱图表效果 -->
+                <script src="../assets/js/jquery.sparkline.js"></script>
+                <!-- 多功能表格插件 -->
+                <script src="../assets/js/jquery.dataTables.js"></script>
+                <!-- 相册 支持TOUCH -->
+                <script src="../assets/js/touchTouch.jquery.js"></script>
+                <!-- 泡泡消息 -->
+                <script src="../assets/js/jquery.gritter.js"></script>
+                <!-- highcharts绘图 包含highcharts.js exporting.js -->
+                <script src="../assets/js/highcharts.js"></script>
+                <script src="../assets/js/exporting.js"></script>
+                <script type="text/javascript">
+                $(function() {
 
-        $.fn.modalmanager.defaults.resize = true;
-        //dataTables
-        $(".dTable,.dTable-small").dataTable({
-            bJQueryUI: !1,
-            bAutoWidth: !1,
-            bSortClasses: true,
-            sPaginationType: "full_numbers",
-            sDom: '<"table-header"fl>t<"table-footer"ip>'
-        });
+                    $.fn.modalmanager.defaults.resize = true;
+                    //dataTables
+                    $(".dTable,.dTable-small").dataTable({
+                        bJQueryUI: !1,
+                        bAutoWidth: !1,
+                        bSortClasses: true,
+                        sPaginationType: "full_numbers",
+                        sDom: '<"table-header"fl>t<"table-footer"ip>'
+                    });
 
-        $("select.uniform, .check, .check :checkbox, input:radio, input:file, .dataTables_length select").uniform();
-        $(".chzn-select").select2();
-        $("form.validatable").validationEngine({
-            promptPosition: "topLeft"
-        });
-        $(".datepicker").datepicker({
-            todayBtn: !0
-        });
+                    $("select.uniform, .check, .check :checkbox, input:radio, input:file, .dataTables_length select").uniform();
+                    $(".chzn-select").select2();
+                    $("form.validatable").validationEngine({
+                        promptPosition: "topLeft"
+                    });
+                    $(".datepicker").datepicker({
+                        todayBtn: !0
+                    });
 
-        //touchTouch thumbs show
-        $("#thumbs a").touchTouch();
+                    //touchTouch thumbs show
+                    $("#thumbs a").touchTouch();
 
-        //bar progress
-        $(".bar-progress .tip").each(function() {
-                var e, t;
-                return t = Math.floor(Math.random() * 80) + 20,
-                    e = "" + t + "%",
-                    $(this).attr("title", e).attr("data-percent", t).attr("data-original-title", e).css({
-                        width: e
+                    //bar progress
+                    $(".bar-progress .tip").each(function() {
+                            var e, t;
+                            return t = Math.floor(Math.random() * 80) + 20,
+                                e = "" + t + "%",
+                                $(this).attr("title", e).attr("data-percent", t).attr("data-original-title", e).css({
+                                    width: e
+                                })
+                        })
+                        //easypiechart
+                    function getRandomInt(e, t) {
+                        return Math.floor(Math.random() * (t - e + 1)) + e
+                    }
+                    var Theme = {
+                        colors: {
+                            red: "#db6464",
+                            green: "#96c877",
+                            blue: "#6e97aa",
+                            orange: "#ff9f01",
+                            gray: "#ccc",
+                            lightBlue: "#D4E5DE"
+                        }
+                    };
+                    var t = [];
+
+                    setInterval(function() {
+                        return $(t).each(function() {
+                            return this.refresh(getRandomInt(0, 80))
+                        })
+                    }, 2500)
+
+                    //gritter growl plugin
+                    var Growl = function() {
+                        var e = this;
+                        return e.info = function(e) {
+                                return e.class_name = "info", e.title = "<i class='icon-info-sign'></i> " + e.title, $.gritter.add(e)
+                            },
+                            e.warn = function(e) {
+                                return e.class_name = "warn", e.title = "<i class='icon-warning-sign'></i> " + e.title, $.gritter.add(e)
+                            },
+                            e.error = function(e) {
+                                return e.class_name = "error", e.title = "<i class='icon-exclamation-sign'></i> " + e.title, $.gritter.add(e)
+                            },
+                            e.success = function(e) {
+                                return e.class_name = "success", e.title = "<i class='icon-ok-sign'></i> " + e.title, $.gritter.add(e)
+                            }, e
+                    }();
+                    $.extend($.gritter.options, {
+                        position: "bottom-right"
                     })
-            })
-            //easypiechart
-        function getRandomInt(e, t) {
-            return Math.floor(Math.random() * (t - e + 1)) + e
-        }
-        var Theme = {
-            colors: {
-                red: "#db6464",
-                green: "#96c877",
-                blue: "#6e97aa",
-                orange: "#ff9f01",
-                gray: "#ccc",
-                lightBlue: "#D4E5DE"
-            }
-        };
-        var t = [];
 
-        setInterval(function() {
-            return $(t).each(function() {
-                return this.refresh(getRandomInt(0, 80))
-            })
-        }, 2500)
+                    $(".growl-info").click(function(e) {
+                        return e.preventDefault(), Growl.info({
+                            title: "This is a notice!",
+                            text: "This will fade out after a certain amount of time."
+                        })
+                    });
+                    $(".growl-warn").click(function(e) {
+                        return e.preventDefault(), Growl.warn({
+                            title: "This is a warning!",
+                            text: "This will fade out after a certain amount of time."
+                        })
+                    });
+                    $(".growl-error").click(function(e) {
+                        return e.preventDefault(), Growl.error({
+                            title: "This is an error!",
+                            text: "This will fade out after a certain amount of time."
+                        })
+                    });
+                    $(".growl-success").click(function(e) {
+                        return e.preventDefault(), Growl.success({
+                            title: "This is a success message!",
+                            text: "This will fade out after a certain amount of time."
+                        })
+                    });
 
-        //gritter growl plugin
-        var Growl = function() {
-            var e = this;
-            return e.info = function(e) {
-                    return e.class_name = "info", e.title = "<i class='icon-info-sign'></i> " + e.title, $.gritter.add(e)
-                },
-                e.warn = function(e) {
-                    return e.class_name = "warn", e.title = "<i class='icon-warning-sign'></i> " + e.title, $.gritter.add(e)
-                },
-                e.error = function(e) {
-                    return e.class_name = "error", e.title = "<i class='icon-exclamation-sign'></i> " + e.title, $.gritter.add(e)
-                },
-                e.success = function(e) {
-                    return e.class_name = "success", e.title = "<i class='icon-ok-sign'></i> " + e.title, $.gritter.add(e)
-                }, e
-        }();
-        $.extend($.gritter.options, {
-            position: "bottom-right"
-        })
-
-        $(".growl-info").click(function(e) {
-            return e.preventDefault(), Growl.info({
-                title: "This is a notice!",
-                text: "This will fade out after a certain amount of time."
-            })
-        });
-        $(".growl-warn").click(function(e) {
-            return e.preventDefault(), Growl.warn({
-                title: "This is a warning!",
-                text: "This will fade out after a certain amount of time."
-            })
-        });
-        $(".growl-error").click(function(e) {
-            return e.preventDefault(), Growl.error({
-                title: "This is an error!",
-                text: "This will fade out after a certain amount of time."
-            })
-        });
-        $(".growl-success").click(function(e) {
-            return e.preventDefault(), Growl.success({
-                title: "This is a success message!",
-                text: "This will fade out after a certain amount of time."
-            })
-        });
-
-        //用户展示说明
-        var pageView = {
-            channelPosition: function() {
-                var boxsArray = [];
-                for (var i = 1; i < 7; i++) {
-                    var objPos = $(".pageViewPop_" + i).offset().top;
-                    boxsArray.push(objPos);
-                }
-                return boxsArray;
-            },
-            animateScroll: function(posid) {
-                var boxypos = this.channelPosition(),
-                    scrollT = boxypos[posid];
-                var obj = document.body;
-                $(obj).animate({
-                    scrollTop: scrollT
-                }, 1000);
-            }
-        }
-        $(".bs-docs-sidenav").find("a").bind("click", function() {
-            $(".bs-docs-sidenav").find("li").removeClass("active");
-            $(this).parent().addClass("active");
-            return false;
-
-        });
-
-
-
-        //绘图展示
-        $('#hightcharts_combin').highcharts({
-            chart: {},
-            title: {
-                text: '综合绘图'
-            },
-            xAxis: {
-                categories: ['苹果', '橘子', '香蕉', '李子', '梨']
-            },
-            tooltip: {
-                formatter: function() {
-                    var s;
-                    if (this.point.name) { // the pie chart
-                        s = '' +
-                            this.point.name + ': ' + this.y + ' 消费水果占比';
-                    } else {
-                        s = '' +
-                            this.x + ': ' + this.y;
-                    }
-                    return s;
-                }
-            },
-            labels: {
-                items: [{
-                    html: '水果消费总量',
-                    style: {
-                        left: '40px',
-                        top: '8px',
-                        color: 'black'
-                    }
-                }]
-            },
-            series: [{
-                type: 'column',
-                name: '汤汤',
-                data: [3, 2, 1, 3, 4]
-            }, {
-                type: 'column',
-                name: '',
-                data: [2, 3, 5, 7, 6]
-            }, {
-                type: 'column',
-                name: '飞飞',
-                data: [4, 3, 3, 9, 0]
-            }, {
-                type: 'spline',
-                name: '平均',
-                data: [3, 2.67, 3, 6.33, 3.33],
-                marker: {
-                    lineWidth: 2,
-                    lineColor: Highcharts.getOptions().colors[3],
-                    fillColor: 'white'
-                }
-            }, {
-                type: 'pie',
-                name: 'Total consumption',
-                data: [{
-                    name: '汤汤',
-                    y: 13,
-                    color: Highcharts.getOptions().colors[0] // Jane's color
-                }, {
-                    name: '超超',
-                    y: 23,
-                    color: Highcharts.getOptions().colors[1] // John's color
-                }, {
-                    name: '飞飞',
-                    y: 19,
-                    color: Highcharts.getOptions().colors[2] // Joe's color
-                }],
-                center: [100, 80],
-                size: 100,
-                showInLegend: false,
-                dataLabels: {
-                    enabled: false
-                }
-            }]
-        });
-        $('#hightcharts_pieA').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-            title: {
-                text: '某某网站用户浏览器统计-2012'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
-                percentageDecimals: 1
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        color: '#000000',
-                        connectorColor: '#000000',
-                        formatter: function() {
-                            return '<b>' + this.point.name + '</b>: ' + this.percentage + ' %';
+                    //用户展示说明
+                    var pageView = {
+                        channelPosition: function() {
+                            var boxsArray = [];
+                            for (var i = 1; i < 7; i++) {
+                                var objPos = $(".pageViewPop_" + i).offset().top;
+                                boxsArray.push(objPos);
+                            }
+                            return boxsArray;
+                        },
+                        animateScroll: function(posid) {
+                            var boxypos = this.channelPosition(),
+                                scrollT = boxypos[posid];
+                            var obj = document.body;
+                            $(obj).animate({
+                                scrollTop: scrollT
+                            }, 1000);
                         }
                     }
-                }
-            },
-            series: [{
-                type: 'pie',
-                name: '占比',
-                data: [
-                    ['Firefox', 45.0],
-                    ['IE', 26.8], {
-                        name: 'Chrome',
-                        y: 12.8,
-                        sliced: true,
-                        selected: true
-                    },
-                    ['Safari', 8.5],
-                    ['Opera', 6.2],
-                    ['Others', 0.7]
-                ]
-            }]
-        });
-        $('#hightcharts_pieB').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-            title: {
-                text: '某某网站用户浏览器统计-2012'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
-                percentageDecimals: 1
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                type: 'pie',
-                name: '占比',
-                data: [
-                    ['Firefox', 45.0],
-                    ['IE', 26.8], {
-                        name: 'Chrome',
-                        y: 12.8,
-                        sliced: true,
-                        selected: true
-                    },
-                    ['Safari', 8.5],
-                    ['Opera', 6.2],
-                    ['Others', 0.7]
-                ]
-            }]
-        });
-        $('#hightcharts_column').highcharts({
-            chart: {
-                type: 'bar'
-            },
-            title: {
-                text: 'Historic World Population by Region'
-            },
-            subtitle: {
-                text: 'Source: Wikipedia.org'
-            },
-            xAxis: {
-                categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
-                title: {
-                    text: null
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Population (millions)',
-                    align: 'high'
-                },
-                labels: {
-                    overflow: 'justify'
-                }
-            },
-            tooltip: {
-                valueSuffix: ' millions'
-            },
-            plotOptions: {
-                bar: {
-                    dataLabels: {
-                        enabled: true
-                    }
-                }
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'top',
-                x: -100,
-                y: 100,
-                floating: true,
-                borderWidth: 1,
-                backgroundColor: '#FAFAFA',
-                shadow: true
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: 'Year 1800',
-                data: [107, 31, 635, 203, 2]
-            }, {
-                name: 'Year 1900',
-                data: [133, 156, 947, 408, 6]
-            }, {
-                name: 'Year 2008',
-                data: [973, 914, 4054, 732, 34]
-            }]
-        });
-        //sparkline
-        return $(".sparkline").each(function() {
-            var e, t, n, r;
-            return n = $(this).attr("data-color") || "red",
-                r = "18px",
-                $(this).hasClass("big") && (t = "5px", e = "2px", r = "30px"),
-                $(this).sparkline("html", {
-                    type: "bar",
-                    barColor: Theme.colors[n],
-                    height: r,
-                    barWidth: t,
-                    barSpacing: e,
-                    zeroAxis: !1
+                    $(".bs-docs-sidenav").find("a").bind("click", function() {
+                        $(".bs-docs-sidenav").find("li").removeClass("active");
+                        $(this).parent().addClass("active");
+                        return false;
+
+                    });
+
+
+
+                    //绘图展示
+                    $('#hightcharts_combin').highcharts({
+                        chart: {},
+                        title: {
+                            text: '综合绘图'
+                        },
+                        xAxis: {
+                            categories: ['苹果', '橘子', '香蕉', '李子', '梨']
+                        },
+                        tooltip: {
+                            formatter: function() {
+                                var s;
+                                if (this.point.name) { // the pie chart
+                                    s = '' +
+                                        this.point.name + ': ' + this.y + ' 消费水果占比';
+                                } else {
+                                    s = '' +
+                                        this.x + ': ' + this.y;
+                                }
+                                return s;
+                            }
+                        },
+                        labels: {
+                            items: [{
+                                html: '水果消费总量',
+                                style: {
+                                    left: '40px',
+                                    top: '8px',
+                                    color: 'black'
+                                }
+                            }]
+                        },
+                        series: [{
+                            type: 'column',
+                            name: '汤汤',
+                            data: [3, 2, 1, 3, 4]
+                        }, {
+                            type: 'column',
+                            name: '',
+                            data: [2, 3, 5, 7, 6]
+                        }, {
+                            type: 'column',
+                            name: '飞飞',
+                            data: [4, 3, 3, 9, 0]
+                        }, {
+                            type: 'spline',
+                            name: '平均',
+                            data: [3, 2.67, 3, 6.33, 3.33],
+                            marker: {
+                                lineWidth: 2,
+                                lineColor: Highcharts.getOptions().colors[3],
+                                fillColor: 'white'
+                            }
+                        }, {
+                            type: 'pie',
+                            name: 'Total consumption',
+                            data: [{
+                                name: '汤汤',
+                                y: 13,
+                                color: Highcharts.getOptions().colors[0] // Jane's color
+                            }, {
+                                name: '超超',
+                                y: 23,
+                                color: Highcharts.getOptions().colors[1] // John's color
+                            }, {
+                                name: '飞飞',
+                                y: 19,
+                                color: Highcharts.getOptions().colors[2] // Joe's color
+                            }],
+                            center: [100, 80],
+                            size: 100,
+                            showInLegend: false,
+                            dataLabels: {
+                                enabled: false
+                            }
+                        }]
+                    });
+                    $('#hightcharts_pieA').highcharts({
+                        chart: {
+                            plotBackgroundColor: null,
+                            plotBorderWidth: null,
+                            plotShadow: false
+                        },
+                        title: {
+                            text: '某某网站用户浏览器统计-2012'
+                        },
+                        tooltip: {
+                            pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                            percentageDecimals: 1
+                        },
+                        plotOptions: {
+                            pie: {
+                                allowPointSelect: true,
+                                cursor: 'pointer',
+                                dataLabels: {
+                                    enabled: true,
+                                    color: '#000000',
+                                    connectorColor: '#000000',
+                                    formatter: function() {
+                                        return '<b>' + this.point.name + '</b>: ' + this.percentage + ' %';
+                                    }
+                                }
+                            }
+                        },
+                        series: [{
+                            type: 'pie',
+                            name: '占比',
+                            data: [
+                                ['Firefox', 45.0],
+                                ['IE', 26.8], {
+                                    name: 'Chrome',
+                                    y: 12.8,
+                                    sliced: true,
+                                    selected: true
+                                },
+                                ['Safari', 8.5],
+                                ['Opera', 6.2],
+                                ['Others', 0.7]
+                            ]
+                        }]
+                    });
+                    $('#hightcharts_pieB').highcharts({
+                        chart: {
+                            plotBackgroundColor: null,
+                            plotBorderWidth: null,
+                            plotShadow: false
+                        },
+                        title: {
+                            text: '某某网站用户浏览器统计-2012'
+                        },
+                        tooltip: {
+                            pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                            percentageDecimals: 1
+                        },
+                        plotOptions: {
+                            pie: {
+                                allowPointSelect: true,
+                                cursor: 'pointer',
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                showInLegend: true
+                            }
+                        },
+                        series: [{
+                            type: 'pie',
+                            name: '占比',
+                            data: [
+                                ['Firefox', 45.0],
+                                ['IE', 26.8], {
+                                    name: 'Chrome',
+                                    y: 12.8,
+                                    sliced: true,
+                                    selected: true
+                                },
+                                ['Safari', 8.5],
+                                ['Opera', 6.2],
+                                ['Others', 0.7]
+                            ]
+                        }]
+                    });
+                    $('#hightcharts_column').highcharts({
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Historic World Population by Region'
+                        },
+                        subtitle: {
+                            text: 'Source: Wikipedia.org'
+                        },
+                        xAxis: {
+                            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                            title: {
+                                text: null
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Population (millions)',
+                                align: 'high'
+                            },
+                            labels: {
+                                overflow: 'justify'
+                            }
+                        },
+                        tooltip: {
+                            valueSuffix: ' millions'
+                        },
+                        plotOptions: {
+                            bar: {
+                                dataLabels: {
+                                    enabled: true
+                                }
+                            }
+                        },
+                        legend: {
+                            layout: 'vertical',
+                            align: 'right',
+                            verticalAlign: 'top',
+                            x: -100,
+                            y: 100,
+                            floating: true,
+                            borderWidth: 1,
+                            backgroundColor: '#FAFAFA',
+                            shadow: true
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        series: [{
+                            name: 'Year 1800',
+                            data: [107, 31, 635, 203, 2]
+                        }, {
+                            name: 'Year 1900',
+                            data: [133, 156, 947, 408, 6]
+                        }, {
+                            name: 'Year 2008',
+                            data: [973, 914, 4054, 732, 34]
+                        }]
+                    });
+                    //sparkline
+                    return $(".sparkline").each(function() {
+                        var e, t, n, r;
+                        return n = $(this).attr("data-color") || "red",
+                            r = "18px",
+                            $(this).hasClass("big") && (t = "5px", e = "2px", r = "30px"),
+                            $(this).sparkline("html", {
+                                type: "bar",
+                                barColor: Theme.colors[n],
+                                height: r,
+                                barWidth: t,
+                                barSpacing: e,
+                                zeroAxis: !1
+                            })
+                    })
                 })
-        })
-    })
-    </script>
+                </script>
 </body>

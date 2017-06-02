@@ -36,10 +36,9 @@ class User(Base, UserMixin):
 class Task(Base,UserMixin):
 	__tablename__='tasks'
 	id=Column(Integer,primary_key=True)
-	username=Column(String(64),unique=True,index=True)
+	username=Column(String(64))
 	title=Column(String(64))
 	body=Column(Text)
-	# ctime=Column()
 	state=Column(String(64))
 
  	
