@@ -44,6 +44,8 @@ class Task(Base,UserMixin):
  	
  	def __repr__(self):
 		return '<Task %r>' % self.title
+	# def get_id(self):
+	# 	return unicode(self.id)
 
 init_db()
 

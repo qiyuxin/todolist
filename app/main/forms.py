@@ -16,6 +16,24 @@ class addTaskForm(FlaskForm):
 		if not Task.query.filter_by(username=field.data).first():
 			raise ValidationError('Username must be already in use.')
 
+class delTaskForm(FlaskForm):
+	username = StringField('username', validators=[Required(), Length(1, 64)])
+	title = StringField('title', validators=[Required(), Length(1, 64)])
+	# body = StringField('body', validators=[Required(), Length(1, 256)])
+	state = StringField('state', validators=[Required(),Length(1, 64)])
+	
+	submit = SubmitField('submit')
+	
+	def validate_username(self, field):
+		if not Task.query.filter_by(username=field.data).first():
+			raise ValidationError('Username must be already in use.')
+
+	def validate_state(self, field):
+		if (Task.query.filter_by(state=field.data).first().state)!='finished':
+
+			raise ValidationError('only finished task can be remove.')
+
+
 class addUserForm(FlaskForm):
 	name = StringField('name', validators=[Required(), Length(1, 64)])
 	passwd = PasswordField('passwd', validators=[Required(), Length(1, 64)])
@@ -24,6 +42,6 @@ class addUserForm(FlaskForm):
 	
 	submit = SubmitField('submit')
 	
-	def validate_name(self, filed):
+	def validate_name(self, field):
 		if User.query.filter_by(name=field.data).first():
 			raise ValidationError('Username already in use.')

@@ -8,7 +8,7 @@ import time
 # from .forms import NameForm
 # from flask_wtf import FlaskForm
 from flask_login import login_user,login_required,current_user,logout_user
-from .forms import addTaskForm,addUserForm 
+from .forms import addTaskForm,addUserForm,delTaskForm 
 
 #form = FlaskForm()
 # def data_in():
@@ -51,6 +51,7 @@ def index():
     user_agent = request.headers.get('User-Agent')
     return '<p>Your browser is %s</p>' % user_agent
 
+
 @main.route('/users',methods=["GET"])
 @login_required
 def users():
@@ -61,6 +62,7 @@ def users():
     print "======", uusers	
     return render_template('user.html',users=uusers)
 	
+
 @main.route('/tasks',methods=["GET"])
 @login_required
 def tasks():
@@ -92,6 +94,7 @@ def login():
     # GET 请求
     return render_template('login.html')
 
+
 @main.route('/logout',methods=['GET', 'POST'])
 @login_required
 def logout():
@@ -103,6 +106,7 @@ def logout():
 # def check_user():
 	#TODO: verify username and pwd
 	#return redirect('/users', 302)
+
 
 @main.route('/addtask',methods=["POST","GET"])
 @login_required
@@ -124,14 +128,51 @@ def add_entry():
         flash("no data of entry to add")
     return render_template('register.html', form=form)
 
-	
-@main.route('/tasks',methods=["POST"])
-def  task_xj():
-	pass
 
-@main.route('/users',methods=["POST"])
-def  user_it():
-	pass
-# 	str(User.query.filter_by(role=user_role))
-# 'SELECT users.id AS users_id, users.username AS users_username,
-# users.role_id AS users_role_id FROM users WHERE :param_1 = users.role_id'
+@main.route('/deltask',methods=["POST","GET"])
+@login_required
+def del_entry():
+    form=delTaskForm()
+    
+    # if not session.get('logged_in'):
+    #     abort(401)
+    if request.method =='POST':
+        if form.validate_on_submit():
+            sn=db_session()
+            sn.query(Task.id).filter_by(username=form.username.data,title=form.title.data,state=form.state.data).delete()
+            print 'tttttttt'
+            # for o in task:
+            #     sn.delete(o)
+            #     sn.commit()
+            # taskk=Task.query.(task)
+            # sn.delete(taskk)
+            sn.commit()
+            flash('an entry was romoves')
+
+            return redirect('/tasks')
+            
+        flash("no  entry matche delete")
+    return render_template('register.html', form=form)
+
+
+
+
+	
+@main.route('/adduser',methods=["POST","GET"])
+@login_required
+def  add_user():
+    form=addUserForm()
+    if request.method =='POST':
+        if form.validate_on_submit():
+            sn=db_session()
+            user=User(name=form.name.data,passwd=form.passwd.data,enable=form.enable.data)
+   
+            sn.add(user)
+            sn.commit()
+            flash('New user was successfully added')
+
+            return redirect('/users')
+        flash("no data of entry to add")
+    return render_template('register.html', form=form)
+
+
